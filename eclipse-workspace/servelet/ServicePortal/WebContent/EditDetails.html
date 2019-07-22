@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+	ul {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: #333;
+	}
+	
+	li {
+	  float: right;
+	}
+	
+	li a {
+	  display: block;
+	  color: white;
+	  text-align: center;
+	  padding: 10px 10px;
+	  text-decoration: none;
+	}
+	form{
+		text-align: center;
+		font-size: 15px;
+		padding: 10px;
+		width: 80%;
+	}
+	
+	li a:hover {
+	  background-color: #111;
+	}
+	header {
+  		padding: 10px;
+  		text-align: center;
+  		font-size: 30px;
+	}
+</style>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		<ul>
+			<li style="float:left; display:block;color: white; text-align: center; padding: 14px 16px; text-decoration: none;"> Space Portal</li>
+  			<li><a href="#logout">Logout</a></li>
+  			<li><a href="#deactive">Deactivate</a></li>
+  			<li> <a> Hi Pal</a> </li>
+		</ul>
+	</div>
+	
+	<header> Edit Details</header>
+	<form action="editDetails" method="post">
+			<table style="with: 50%">
+				<tr>
+					<td>Name</td>
+					<td><input type="text" name="first_name" placeholder="First Name"/></td>
+					<td><input type="text" name="last_name" placeholder="Last Name"/></td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td><input type="text" name="email" placeholder = "Email"/></td>
+				</tr>
+				<tr>
+					<td>Address</td>
+					<td><input type="text" name="add1" placeholder="Address Line 1"/></td>
+					<td><input type="text" name="add2" placeholder="Address Line 2"/></td>
+				</tr>
+				<tr>
+					<td>City</td>
+					<td><input type="text" name="city" placeholder="City"/></td>
+					<td>
+						<select name="state" placeholder = "Select State">
+							<option> Andhra Pradesh </option>
+							<option> Arunachal Pradesh </option>
+							<option> Assam </option>
+							<option> Bihar </option>
+							<option> Chhattisgarh </option>
+							<option> Goa </option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Zip</td>
+					<td><input type="text" name="zipcode" placeholder="Zip code"></td>
+					<td>
+						<select name="cntry" placeholder="country">
+							<option> India </option>
+							<option> USA </option>
+							<option> Australia </option>
+							<option> Russia </option>
+							<option> China </option>
+							<option> Shrilankha </option>
+						</select><br>
+					</td>
+				</tr>
+			</table>
+			<input type="submit" value="Submit" />
+			<a href="AfterLogin.html"> discard </a>
+			
+	</form>
+</body>
+</html>
+	

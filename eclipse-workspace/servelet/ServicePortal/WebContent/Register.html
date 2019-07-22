@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+	ul {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: #333;
+	}
+	
+	li {
+	  float: right;
+	}
+	
+	li a {
+	  display: block;
+	  color: white;
+	  text-align: center;
+	  padding: 10px 10px;
+	  text-decoration: none;
+	}
+	form{
+		text-align:center;
+		font-size: 15px;
+		padding: 10px;
+	}
+	
+	li a:hover {
+	  background-color: #111;
+	}
+	header {
+  		padding: 10px;
+  		text-align: center;
+  		font-size: 30px;
+	}
+</style>
+<meta charset="UTF-8">
+<title>Registration</title>
+</head>
+<body>
+	<div>
+		<ul>
+			<li style="float:left; display:block;color: white; text-align: center; padding: 14px 16px; text-decoration: none;"> Space Portal</li>
+  			<li><a href="#logout">Logout</a></li>
+  			<li><a href="#deactive">Deactivate</a></li>
+  			<li> <a> Hi Pal</a> </li>
+		</ul>
+	</div>
+	
+	<header> Edit Details</header>
+	
+	<form action="register" method="post">
+		<input type="text" name = "fistname" placeholder ="First Name">
+		<input type="text" name = "lastname" placeholder ="Last Name"><br/>
+			 
+		<input type="text" name="email" placeholder="email">
+		<input type="text" name="email_conf" placeholder="confirm email"><br>
+		<input type="password" name="pass" placeholder="password">
+		<input type="password" name="conf_pass" placeholder="confirm password"><br>
+		
+		<input type="submit" value ="Create Account"><br>
+		<a href="/LoginPage.html">have an account already?</a>
+	</form>
+	
+</body>
+</html>
