@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Information</title>
+</head>
+<style type="text/css">
+	ul {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: #333;
+	}
+	li a {
+	  display: block;
+	  color: white;
+	  text-align: center;
+	  padding: 10px 10px;
+	  text-decoration: none;
+	}
+	form{
+		text-align: center;
+		font-size: 15px;
+		padding: 10px;
+		width: 80%;
+	}
+</style>
+<body>
+	<div>
+		<ul>
+			<li style="float:left; display:block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;" > <b> Phone Directory </b> </li>
+			<li style="float:right; display:block; text-align: center; padding: 14px 16px; text-decoration: none;"><a href="#logout"> <b>Logout</b> </a></li>
+		</ul>
+	</div>
+	<form action="save">
+		<table align="center" style="width:50%">
+			<tr>
+				<td>Name</td>
+				<td> <input type="text" name="fname" placeholder="First Name"> </td>
+				<td> <input type="text" name="lname" placeholder="Last Name"></td>
+			</tr>
+			<tr>
+				<td>Address</td>
+				<td><input type="text" name="add1" placeholder="Address Line 1"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="text" name="add2" placeholder="Address Line 2"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="text" name="city" placeholder="City"></td>
+				<td>
+					<select name="state" placeholder = "Select State">
+						<option> Andhra Pradesh </option>
+						<option> Arunachal Pradesh </option>
+						<option> Assam </option>
+						<option> Bihar </option>
+						<option> Chhattisgarh </option>
+						<option> Goa </option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="text" name="zipcode" placeholder="Zip Code"></td>
+				<td>
+					<select name="cntry" placeholder="country">
+						<option> India </option>
+						<option> USA </option>
+						<option> Australia </option>
+						<option> Russia </option>
+						<option> China </option>
+						<option> Shrilankha </option>
+					</select><br>
+				</td>
+			</tr>
+			<tr>
+				<td>PHONE(WORK)</td>
+				<td><input type="text" name="phone_work" placeholder="123-456-7890"></td>
+			</tr>
+			<tr>
+				<td>PHONE(MOBILE)</td>
+				<td><input type="text" name="phone_mobile" placeholder="123-456-7890"></td>
+			</tr>
+			<tr>
+				<td>PHONE(HOME)</td>
+				<td><input type="text" name="phone_home" placeholder="123-456-7890"></td>
+			</tr>
+		</table>
+		<input type="submit" value="Save Details" align:center>
+		<a href="#discard">Discard</a>
+	</form>
+	
+</body>
+</html>
